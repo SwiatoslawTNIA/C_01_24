@@ -4,6 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <stdbool.h>
 typedef struct NODE {
   struct NODE *next;
   int value;
