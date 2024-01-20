@@ -16,6 +16,8 @@ trans->product->quantity_on_hand -= trans->quantity;
 // upperȱcaseȱlettersȱ
 // punctuationȱcharactersȱ
 // nonȬprintableȱcharactersȱ
+
+
 void readFunc(void)
 {
   printf("Please start typing:\n>  ");

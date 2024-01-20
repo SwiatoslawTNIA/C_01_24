@@ -10,4 +10,5 @@ typedef struct NODE {
   int value;
 } Node;
 enum OPERAND {ADD, SUBTRACT, MULTIPLY, DIVIDE};
+
 #endif
