@@ -3,8 +3,22 @@
 #include "c2.h"
 int main(void)
 {
-
-  return 0;
+  
+  //an example of using memset():
+  size_t arr_length = 10;
+  int arr[arr_length];
+  printf("%lu", arr_length);
+  memset(arr,'1', arr_length );
+  //the issue I was experiencing was due to the fact, that int is 4 bytes long, 
+  //and I was trying to assign int each byte in memory.
+  for(int i = 0; i < arr_length; ++i)
+  {
+    printf("The value after memset is: %c\n", arr[i]);
+  }
+  long int number = 0;
+  assert(arr_length - number == 10);//
+  printf("Terminating, value: %ld", number);
+  return 0; 
 }
 // enum {LONG, SHORT};
 // char *cpu_type(void);
