@@ -5,6 +5,8 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <locale.h>
+#include <assert.h>
 typedef struct NODE {
   struct NODE *next;
   int value;

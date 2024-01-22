@@ -1,5 +1,5 @@
 r: c
-	valgrind ./c this is to be displayed
+	valgrind --track-origins=yes -s ./c this is to be displayed 
 c: c1.o c.o c2.o
 	gcc c.o c1.o c2.o -o c -Wall
 
