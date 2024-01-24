@@ -1,23 +1,33 @@
-#include "c.h"
-#include "c1.h"
-#include "c2.h"
+#include "../headers/c.h"
+#include "../headers/c1.h"
+#include "../headers/c2.h"
+#include "assert.h"
+#include "math.h"
+#include "error.h"
+#define BASE 10
 int main(void)
 {
-  
+  // int num = 1;
   //an example of using memset():
-  size_t arr_length = 10;
-  int arr[arr_length];
-  printf("%lu", arr_length);
-  memset(arr,'1', arr_length );
-  //the issue I was experiencing was due to the fact, that int is 4 bytes long, 
-  //and I was trying to assign int each byte in memory.
-  for(int i = 0; i < arr_length; ++i)
-  {
-    printf("The value after memset is: %c\n", arr[i]);
-  }
-  long int number = 0;
-  assert(arr_length - number == 10);//
-  printf("Terminating, value: %ld", number);
+  // size_t arr_length = 10;
+  // int arr[arr_length];
+  // printf("%lu", arr_length);
+  // memset(arr,'1', arr_length );
+  // //the issue I was experiencing was due to the fact, that int is 4 bytes long, 
+  // //and I was trying to assign int each byte in memory.
+  // for(int i = 0; i < arr_length; ++i)
+  // {
+  //   printf("The value after memset is: %c\n", arr[i]);
+  // }
+  // long int number = 0;
+  // assert(arr_length - number == 10);//
+  // printf("Terminating, value: %ld", number);
+  int num1 = 24, num2 = 7;
+  //let's check that a mod b = a - b*floor(a/b)
+  int res_1 = num1 % num2;
+  int res_2 = num1 - num2 * floor(num1 / num2);
+  assert(res_1 == res_2);//Assertion failed, thus res_1 == res_2!!!!, WOOW!!!
+  printf("Hello, it's me.");
   return 0; 
 }
 // enum {LONG, SHORT};

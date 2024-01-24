@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "c.h": "c",
+    "c1.h": "c",
+    "c2.h": "c",
+    "assert.h": "c"
+  }
+}

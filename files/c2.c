@@ -16,7 +16,10 @@ trans->product->quantity_on_hand -= trans->quantity;
 // upperȱcaseȱlettersȱ
 // punctuationȱcharactersȱ
 // nonȬprintableȱcharactersȱ
-
+double tripeFunc(double element)
+{
+  return element*element*element;
+}
 
 void readFunc(void)
 {

@@ -1,7 +1,11 @@
-#include "c1.h"
+#include "../headers/c1.h"
 int doubleFunction(int arg)
 {
   return arg * 2;
+}
+void createMessage(char *message)
+{
+  printf("%s", message);
 }
 //The problem with the search_node function is that it only works for a single linked list, 
 //and values that are integers;
