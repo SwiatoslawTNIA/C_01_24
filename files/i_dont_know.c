@@ -65,7 +65,7 @@ int main(void)
 // //   int value = 5;
 // //   Node *correct_node = searchGeneral(nodes, &value, compare_ints);
 // //   fprintf(stdout, "%d is the value in the node.", correct_node->value);
-// //   //check <Insert here> the traverseList function:
+// //   //check the traverseList function:
 // //   traverseList(nodes, traverseListHelp);
   
 

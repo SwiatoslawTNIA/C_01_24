@@ -42,14 +42,14 @@ CFLAGS = -I headers
 run: c
 	./c 
 %.o: %.c
-	$(COMPILE.c) $(OUTPUT_OPTION) $<
+	$(COMPILE.c) $(OUTPUT_OPTION) $< -o $@
 %: %.o
 	$(LINK.o) $^ $(LOADLIBLES) $(LDLIBS) -o $@
 c: c.o c1.o c2.o stack.o 
-c.o: c.h
-c1.o: c1.h
-c2.o: c2.h
-stack.o: stack.h
+c.o: c.c c.h
+c1.o: c1.c c1.h
+c2.o: c2.c c2.h
+stack.o: stack.c stack.h
 %: %.o
 	$(COMPILE.c) $^ $(OUTPUT_OPTION) $< 
 
@@ -60,5 +60,3 @@ stack.o: stack.h
 .PHONY: clean
 clean:
 	rm -f *.o c
-	rm -f *.out
-	
