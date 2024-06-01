@@ -120,7 +120,10 @@ int main(void)
 //   #ifndef HAHA
 //     system("ls -lFa");
 //   #endif
-
+void adding(void)
+{
+  fprintf("I'm adding something...");
+}
   
 
 
